@@ -1,0 +1,47 @@
+#para
+{
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+    padding: 10px;
+    
+
+}
+
+#para div{
+    height: 370px;
+    width: 335px;
+    margin: 50px;
+
+
+    
+}
+
+.para1
+{
+    text-align: center;
+    font-size: medium;
+    margin:30px;
+    padding: 10px;
+}
+
+.para2{
+    margin:30px;
+    padding:10px;
+    width: 10;
+    background-color: #f3f4ee;
+    text-align: center;
+
+
+}
+
+.para3
+{
+    margin: 20px;
+    padding:10px;
+    text-align: center;
+    border: 3px solid #20b15a;
+    
+}
+
+
