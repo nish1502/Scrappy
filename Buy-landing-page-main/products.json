@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name":" Plastic Scrap",
+        "price": 200,
+        "image": "Buy-landing-page-main/image/plastic-scrap.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Wood Scrap",
+        "price": 250,
+        "image": "Buy-landing-page-main/image/wood-scrap.webp"
+    },
+    {
+        "id": 3,
+        "name":" Paper Scrap",
+        "price": 290,
+        "image": "Buy-landing-page-main/image/paper-scrap.webp"
+    },
+    {
+        "id": 4,
+        "name":" Metal Scrap",
+        "price": 200,
+        "image": "Buy-landing-page-main/image/metal-scrap.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Glass Scrap",
+        "price": 300,
+        "image": "Buy-landing-page-main/image/glass-scrap.webp"
+    },
+    {
+        "id": 6,
+        "name":" Electronic Scrap",
+        "price": 200,
+        "image": "Buy-landing-page-main/image/electronic-scrap.jpg"
+    }
+
+]
