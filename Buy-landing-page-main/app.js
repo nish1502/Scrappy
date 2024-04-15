@@ -130,13 +130,8 @@ const changeQuantityCart = (product_id, type) => {
 
 const initApp = () => {
     // get data product
-    fetch('Buy-landing-page-main/products.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
+    fetch('products.json')
+    .then(response => response.json())
     .then(data => {
         products = data;
         addDataToHTML();
@@ -147,8 +142,5 @@ const initApp = () => {
             addCartToHTML();
         }
     })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-    });
 }
 initApp();
