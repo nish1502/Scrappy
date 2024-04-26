@@ -30,7 +30,7 @@
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         />
-        <link rel="stylesheet" href="nishita_css/style_nishita.css" />
+        <link rel="stylesheet" href="style_nishita.css" />
     
         <!-- Scripts -->
         <script
@@ -49,80 +49,45 @@
       </head>
 <body>
     <!--header start-->
-    <header class = "site-header py-3 fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg p-0">
-              <a class="navbar-brand p-0 m-0" href="index_nishita.html">Scrap<span>py</span></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gx-5">
+<header class="site-header py-3">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg p-0">
+          <a class="navbar-brand p-0 m-0" href="index_nishita.html">Scrap<span>py</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gx-5">
                   <li class="nav-item dropdown">
-                    <a
-                      href="#"
-                      class="nav-link dropdown-toggle text-dark fw-regular"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      >Services<img
-                        src="images_nishita/down-arrow.png"
-                        class="ms-2"
-                        alt="arrow"
-                    /></a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item text-dark" href="Buy-landing-page-main/index.html">Buy</a>
-                      </li>
-                      <!--<a class="nav-link text-white fw-regular btn btn-success px-4 radius-10"
-                      href="login.html"
-                      >Login/Sign Up</a
-                    >-->
-                      <li>
-                        <a class="dropdown-item" href="Sell_page/index.html">Sell</a>
-                      </li>
-                      <!--<li>
-                        <a class="dropdown-item text-dark" href="#"
-                          >Something else here</a
-                        >
-                      </li>-->
-                    </ul>
+                      <a href="#" class="nav-link dropdown-toggle text-dark fw-regular" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services
+                          <img src="images_nishita/down-arrow.png" class="ms-2" alt="arrow" />
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li>
+                              <a class="dropdown-item text-dark" href="index_buy.html">Buy</a>
+                          </li>
+                          <li>
+                              <a class="dropdown-item" href="index_sell.html">Sell</a>
+                          </li>
+                      </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark fw-regular" href="about_us/aboutus_mrunmai.html">About Us</a>
+                      <a class="nav-link text-dark fw-regular" href="aboutus_mrunmai.html">About Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-dark fw-regular" href="contact.html">Contact Us</a>
-
+                      <a class="nav-link text-dark fw-regular" href="contact.html">Contact Us</a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link text-white fw-regular btn btn-success px-4 radius-10"
-                      href="login.html"
-                      >Login/Sign Up</a
-                    >
+                      <a class="nav-link text-white fw-regular btn btn-success px-4 radius-10" href="login.html">Login/Sign Up</a>
                   </li>
-                  <!--<li class="nav-item">
-                    <a class="nav-link text-white fw-regular btn btn-success px-4 radius-10"
-                      href="signup.html">Sign Up</a>
-                  </li>-->
-                </ul>
-              </div>
-            </nav>
+              </ul>
           </div>
+      </nav>
+  </div>
+</header>
+<!-- Header End -->
 
 
-    </header>
-    <!-- Header End -->
 
     <!-- Hero Banner Start -->
     <section class="hero-banner">
@@ -425,17 +390,17 @@
               <p>
                 Please drop your email below to get daily update about what we do
               </p>
-              <form id="subscribe-form">
+              <form id="subscribe-form" method ="post" action ="subscribe.php">
                 <input
                   type="email"
-                  name="subscribe"
+                  name="Email"
                   id="subscribe"
                   required
                   placeholder="Enter Your Email Address"
                 />
-                <input type="submit" value="Subscribe" />
+                <input type="submit" name = "submit" value="Subscribe" />
               </form>
-              <div id="subscribe-response-message" style="display: none"></div>
+           <div id="subscribe-response-message" style="display: none"></div>
             </div>
           </div>
         </div>

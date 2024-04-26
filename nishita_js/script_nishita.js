@@ -1,29 +1,50 @@
-document
-  .getElementById("subscribe-form")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
+document.getElementById("subscribe-form").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    let emailInput = document.getElementById("subscribe");
-    let email = emailInput.value;
-    let responseMessageDiv = document.getElementById(
-      "subscribe-response-message"
-    );
+  let emailInput = document.getElementById("subscribe");
+  let email = emailInput.value;
+  let responseMessageDiv = document.getElementById("subscribe-response-message");
 
-    if (email === "") {
+  if (email === "") {
       responseMessageDiv.innerHTML = "Email cannot be empty.";
       responseMessageDiv.style.display = "block";
       return;
-    }
+  }
 
-    emailInput.value = "";
+  emailInput.value = "";
 
-    responseMessageDiv.innerHTML = "Thank you for subscribing!";
-    responseMessageDiv.style.display = "block";
-
-    setTimeout(function () {
-      responseMessageDiv.style.display = "none";
-    }, 5000);
+  fetch('subscribe.php', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: 'Email=' + encodeURIComponent(email),
+  })
+  .then(response => {
+      if (response.ok) {
+          responseMessageDiv.innerHTML = "Thank you for subscribing!";
+          responseMessageDiv.style.display = "block";
+          setTimeout(function () {
+              responseMessageDiv.style.display = "none";
+          }, 5000);
+      } else {
+          responseMessageDiv.innerHTML = "Error subscribing. Please try again later.";
+          responseMessageDiv.style.display = "block";
+          setTimeout(function () {
+              responseMessageDiv.style.display = "none";
+          }, 5000);
+      }
+  })
+  .catch(error => {
+      console.error('Error:', error);
+      responseMessageDiv.innerHTML = "Error subscribing. Please try again later.";
+      responseMessageDiv.style.display = "block";
+      setTimeout(function () {
+          responseMessageDiv.style.display = "none";
+      }, 5000);
   });
+});
+
 
 $(".testimonials-slider").slick({
   dots: false,
