@@ -15,7 +15,8 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-                
+        <link rel="stylesheet" href="style_chatbot.css">
+        <script src="script_chatbot.js"></script>
         
     
            
@@ -118,7 +119,30 @@
         </section>
  
 
-
+<!-- Icon to trigger chatbot -->
+<div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatbot()">
+    <!-- Add your icon here -->
+    <!-- For example, you can use an image or an icon font -->
+    <img src="images_nishita/chatbotold.png" alt="Chatbot Icon">
+  </div>
+  
+  <!-- Chatbot interface Start -->
+  <div id="chatbot" class="chatbot">
+    <div class="chatbot-header">
+        <div class="close-button" onclick="closeChatbot()">&times;</div>
+    </div>
+    <!--<div class="welcome-message">
+        <h4>Welcome to Scrappy :)</h4>
+    </div>-->
+    <div class="chatbot-body" id="chatbot-body">
+        <div class="chat-container" id="chat-container"></div>
+    </div>
+    <div class="chatbot-footer">
+        <input type="text" id="user-input" placeholder="Type your question...">
+        <button onclick="sendQuestion()">Send</button>
+    </div>
+  </div>
+  <!-- Chatbot interface End -->
         <!-- JavaScript -->
         <script src="login.js"></script>
     </body>

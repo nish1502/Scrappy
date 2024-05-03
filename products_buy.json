@@ -15,7 +15,7 @@
         "id": 3,
         "name":" Paper Scrap",
         "price": 290,
-        "image": "ima"
+        "image": "/Applications/XAMPP/xamppfiles/htdocs/miniproject/image_buy/paperstack.jpeg"
     },
     {
         "id": 4,
