@@ -208,53 +208,50 @@ header.fixed-top {
 #para {
   display: flex;
   justify-content: center;
-  min-height: 400px;
+  min-height: auto; /* Remove fixed minimum height */
   padding: 10px;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
 }
 
 #para div {
-  height: 370px;
-  width: 335px;
-  margin: 50px;
+  flex: 1;
+  max-width: 300px; /* Reduce maximum width */
+  margin: 10px;
+  overflow: hidden; /* Hide overflow content */
+}
+
+.para1, .para2, .para3 {
+  padding: 15px; /* Reduce padding */
+  text-align: center;
 }
 
 .para1 {
-  text-align: center;
-  font-size: medium;
-  margin: 30px;
-  padding: 10px;
+  font-size: 16px; /* Adjust font size */
 }
 
 .para2 {
-  margin: 30px;
-  padding: 10px;
-  width: 10;
   background-color: #f3f4ee;
-  text-align: center;
 }
 
 .para3 {
-  margin: 20px;
-  padding: 10px;
-  text-align: center;
   border: 3px solid #20b15a;
 }
 
 /* Responsive styles */
 
 @media screen and (max-width: 768px) {
-  #para {
-      flex-direction: column;
-      align-items: center;
+  #para div {
+    flex-basis: calc(50% - 20px); /* Adjust flex basis to fit two items per row */
+    max-width: calc(50% - 20px); /* Adjust max-width for smaller screens */
   }
   
-  #para div {
-      margin: 20px;
+  .para1, .para2, .para3 {
+    font-size: 14px; /* Further reduce font size */
   }
 }
-
-
 /* Middle Page End */
+
+
 
 
 

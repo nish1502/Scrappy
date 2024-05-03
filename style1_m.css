@@ -103,35 +103,70 @@
   /* Header CSS End */
 
   .container {
-    width: 80%;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #f7f7f7;
+    padding: 40px;
+    background-color: #f9f9f9;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .container h1 {
-    font-size: 32px;
+    font-size: 36px;
     color: #333;
+    margin-bottom: 30px;
   }
   
   .container h1 span {
-    color: #009688;
+    color: #20b15a;
   }
   
   .container p {
-    font-size: 18px; /* Increase font size */
-    color: #333; /* Adjust text color */
-    line-height: 1.8; /* Increase line height for better readability */
-    margin-bottom: 15px; /* Add some space between paragraphs */
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
   }
   
-  /* Responsive Styles */
+  .container ul {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .container ul li {
+    font-size: 16px;
+    color: #444;
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .container p:last-child {
+    margin-bottom: 0;
+  }
+  
   @media only screen and (max-width: 768px) {
     .container {
-      width: 90%;
-      padding: 15px;
+      padding: 30px;
+    }
+  
+    .container h1 {
+      font-size: 32px;
+    }
+  
+    .container p {
+      font-size: 16px;
+    }
+  
+    .container ul li {
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container {
+      padding: 20px;
     }
   
     .container h1 {
@@ -141,18 +176,11 @@
     .container p {
       font-size: 14px;
     }
-  }
   
-  @media only screen and (max-width: 480px) {
-    .container h1 {
-      font-size: 24px;
-    }
-  
-    .container p {
-      font-size: 13px;
+    .container ul li {
+      font-size: 12px;
     }
   }
-  
   
 /* Footer Start */
 
