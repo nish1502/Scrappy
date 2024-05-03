@@ -102,127 +102,58 @@
   
   /* Header CSS End */
 
-#banner {
-    background: #ffffff;
-    background-size: cover;
-    background-image: center;
-    height: 150vh;
-}
-
-/*.logo {
-    width: 140px;
-    position: absolute;
-    top: 4%;
-    left: 5%;
-}*/
-
-.banner-text {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
     text-align: center;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    padding-top: 50px;
-    
-
-}
-
-.banner-text h1 {
-    font-size: 80px;
-    margin-bottom: 10px;
-}
-
-.logo1 {
-    text-align: left;
-    font-size: 50px;
-    padding-top: 3%;
-    padding-left: 6%;
-    color: rgb(28, 238, 81);
-}
-
-.point1 {
-    text-align: center;
-    color: black;
-    font-size: 15px;
-    margin-top: -60px;
-
-}
-
-.point1 h2 {
-    text-align: center;
-    padding-bottom: 20%;
-    padding-left: 10%;
-
-}
-
-.logo20 {
-    margin-top: -20%;
-}
-
-.logo2 {
-    text-align: left;
-    font-size: 50px;
-    padding-top: 4%;
-    padding-left: 6%;
-    color: rgb(28, 238, 81);
-}
-
-.point2 {
-    font-size: 15px;
-}
-
-.point2 h2 {
-    text-align: center;
-    padding-top: 0%;
-    padding-left: 10%;
-    margin-top: -50px;
-}
-
-.logo30 {
-    margin-top: -20%;
-}
-
-.logo3 {
-    text-align: left;
-    font-size: 50px;
-    padding-top: 25%;
-    padding-left: 6%;
-    color: rgb(28, 238, 81);
-}
-
-.point3 {
-    font-size: 15px;
-}
-
-.point3 h3 {
-    text-align: center;
-    padding-top: 0%;
-    padding-left: 10%;
-    margin-top: -50px;
-    
-}
-.logo40 {
-    margin-top: -20%;
-}
-
-.logo4 {
-    text-align: left;
-    font-size: 50px;
-    padding-top: 25%;
-    padding-left: 6%;
-    color: rgb(28, 238, 81);
-}
-
-.point4 {
-    font-size: 15px;
-}
-
-.point4 h4 {
-    text-align: center;
-    padding-top: 0%;
-    padding-left: 10%;
-    margin-top: -50px;
-    
-}
-
+  }
+  
+  .container h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .container h1 span {
+    color: #009688;
+  }
+  
+  .container p {
+    font-size: 18px; /* Increase font size */
+    color: #333; /* Adjust text color */
+    line-height: 1.8; /* Increase line height for better readability */
+    margin-bottom: 15px; /* Add some space between paragraphs */
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .container h1 {
+      font-size: 28px;
+    }
+  
+    .container p {
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container h1 {
+      font-size: 24px;
+    }
+  
+    .container p {
+      font-size: 13px;
+    }
+  }
+  
+  
 /* Footer Start */
 
 .site-footer {
