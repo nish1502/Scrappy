@@ -31,6 +31,7 @@
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         />
         <link rel="stylesheet" href="style_nishita.css" />
+        <link rel="stylesheet" href="style_chatbot.css">
     
         <!-- Scripts -->
         <script
@@ -45,7 +46,8 @@
           src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
           defer
         ></script>
-        <script src="nishita_js/script_nishita.js" defer></script>
+        <script src="script_nishita.js" defer></script>
+        <script src="script_chatbot.js"></script>
       </head>
 <body>
     <!--header start-->
@@ -101,7 +103,7 @@
                 We empower scrap businesses to attract more clients, differentiate themselves in the market, and increase profits.
               </p>
               <a
-                href="#"
+                href="index_nishita.html"
                 class="nav-link text-white fw-regular btn btn-success px-4 radius-10"
                 >Get Started
               </a>
@@ -149,7 +151,7 @@
                 <img src="images_nishita/Activity.png" alt="Activity" class="mb-3" />
                 <h3>Buy from Scrappy</h3>
                 <p>Join us in our mission to revolutionize scrap management and make sustainable living accessible to all. Shop with Scrappy today and be a part of the change.</p>
-                <a href="#"
+                <a href="index_buy.html"
                   >Learn More <img src="images_nishita/right-arrow.png" alt="Arrow"
                 /></a>
               </div>
@@ -159,7 +161,7 @@
                 <img src="images_nishita/Heart.png" alt="Heart" class="mb-3" />
                 <h3>Sell with Scrappy</h3>
                 <p>Transform clutter into cash while championing sustainability with Scrappy. Join our community of eco-conscious sellers today and pave the way for a greener future</p>
-                <a href="#"
+                <a href="index_sell.html"
                   >Learn More <img src="images_nishita/right-arrow.png" alt="Arrow"
                 /></a>
               </div>
@@ -169,7 +171,7 @@
                 <img src="images_nishita/Work.png" alt="Work" class="mb-3" />
                 <h3>One Stop Solution</h3>
                 <p>Buy, Sell and Manage Scrap with Scrappy.By choosing Scrappy, you're not just buying scraps; you're investing in a cleaner, greener future. </p>
-                <a href="#"
+                <a href="aboutus_mrunmai.html"
                   >Learn More <img src="images_nishita/right-arrow.png" alt="Arrow"
                 /></a>
               </div>
@@ -185,17 +187,17 @@
         <div class="para1" >
         <h1 style="text-align: center;font-size: 40px;"> Our planet, <br>Our responsibility.</h1>
     <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore ut, libero incidunt dolorem sint pariatur ullam placeat at praesentium accusamus omnis alias mollitia molestias impedit est in culpa, nisi ipsum.
+      Our planet is a precious gem floating in the vastness of space, entrusted to our care. It's our responsibility to cherish and safeguard it. By living mindfully, conserving resources, and advocating for environmental protection, we can ensure a sustainable future for generations to come.
     </p>    
     </div>
     
         <div class="para2">
         <h4 style="color: #20b15a;text-align:center; font-size: 20px;">THE VALUES <br>WE UPHOLD</h4>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nemo delectus libero rem minus exercitationem magni fugiat, ullam aperiam amet et ad eligendi asperiores! Saepe dolore nemo amet autem porro. Quae debitis corporis unde repudiandae officia nemo, facilis illum non ratione explicabo architecto consequuntur veritatis eaque autem assumenda minus molestias?</p>    </div>
+    <p>In Scrappy, our core values are sustainability, efficiency, and integrity. We strive to minimize waste through recycling and reuse, reduce our environmental impact, and maintain transparency in our operations. These values guide us towards responsible and ethical practices, ensuring a greener future for all.</p>    </div>
     
         <div class="para3">
         <h4 style="color:#20b15a;text-align: center;font-size: 20px; ">THE WORK <br>WE DO</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dolores qui nulla nemo quod vel libero dolor, molestiae doloribus. Quod esse minima sunt fugit possimus, ducimus laborum ab tempore et debitis, provident est assumenda ipsum aspernatur cumque quasi ea illum commodi facilis molestiae ullam. Voluptates, quo eius! Illum, sapiente!</p>    </div>
+    <p>Our work revolves around the efficient collection,sorting and recycling of various materials, ranging from metals to plastics. We collaborate with industries, businesses, and individuals to responsibly dispose of scrap materials while maximizing their potential for reuse and recycling. Our efforts not only divert waste from landfills but also contribute to resource conservation and environmental sustainability.</p>    </div>
         
         </div>
     </div>
@@ -303,7 +305,7 @@
             <div class="col-md-12">
               <h5 class="sub-heading">WHY CHOOSE US?</h5>
               <h2 class="main-heading">
-                See what our customers <br />
+                See what our customers <br/>
                 say about us
               </h2>
             </div>
@@ -377,6 +379,32 @@
       </div>
   
       <!-- Testimonials End -->
+
+<!-- Icon to trigger chatbot -->
+<div id="chatbot-icon" class="chatbot-icon" onclick="toggleChatbot()">
+  <!-- Add your icon here -->
+  <!-- For example, you can use an image or an icon font -->
+  <img src="images_nishita/chatbotold.png" alt="Chatbot Icon">
+</div>
+
+<!-- Chatbot interface Start -->
+<div id="chatbot" class="chatbot">
+  <div class="chatbot-header">
+      <div class="close-button" onclick="closeChatbot()">&times;</div>
+  </div>
+  <!--<div class="welcome-message">
+      <h4>Welcome to Scrappy :)</h4>
+  </div>-->
+  <div class="chatbot-body" id="chatbot-body">
+      <div class="chat-container" id="chat-container"></div>
+  </div>
+  <div class="chatbot-footer">
+      <input type="text" id="user-input" placeholder="Type your question...">
+      <button onclick="sendQuestion()">Send</button>
+  </div>
+</div>
+<!-- Chatbot interface End -->
+
       <!-- Newsletter Start -->
   
       <div class="subscribe">
@@ -452,7 +480,7 @@
             </div>
             <div class="col-md-3">
               <h3>Address</h3>
-              <p>Scrappy Head Office.<br> Navi Mumbai <br />India</p>
+              <p>Scrappy Head Office.<br> Calfornia <br />United States</p>
             </div>
             <div class="col-md-12">
               <p class="copyright">Copyright &copy; Scrappy BG04 2024</p>
