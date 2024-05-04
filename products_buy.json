@@ -15,7 +15,7 @@
         "id": 3,
         "name":" Paper Scrap",
         "price": 290,
-        "image": "/Applications/XAMPP/xamppfiles/htdocs/miniproject/image_buy/paperstack.jpeg"
+        "image": "image_buy/paper-scrap.webp"
     },
     {
         "id": 4,
@@ -34,18 +34,10 @@
         "name":" Electronic Scrap",
         "price": 200,
         "image": "image_buy/electronic-scrap.jpg"
-    },
-    {
-        "id": 7,
-        "name":" Electronic Scrap",
-        "price": 200,
-        "image": "image_buy/electronic-scrap.jpg"
-    },
-    {
-        "id": 8,
-        "name":" Electronic Scrap",
-        "price": 200,
-        "image": "image_buy/electronic-scrap.jpg"
     }
 
+
+
+
+  
 ]
